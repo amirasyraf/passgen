@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>Password Generator & Strength Checker</title>
+        <meta name="author" content="Amir Asyraf">
+        <meta name="description" content="Password Generator and Strength Checker">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+    </head>
+    <body class="body">
+        <header class="header text-center">
+            <h1 class="site-title">Password Generator & Strength Checker</h1>
+            <div class="test"><h6 class="text-muted">Generate random password or type in your own password to check for its strength</h6></div>
+        </header>
+        <main class="main container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">
+                                Generated Password:
+                            </label>
+                            <div class="input-group">
+                                <input aria-describedby="crackTime" class="form-control form-control-lg" id="randomPassword" placeholder="Generated password" type="text"/>
+                                <div class="input-group-append">
+                                    <button aria-label="Copy" class="btn text-secondary" data-clipboard-target="#randomPassword" id="copyButton" type="button">
+                                        <svg>
+                                            <use xlink:href="icons.svg#icons-copy">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="input-group-append">
+                                    <!-- specify WHAT form this button is triggering `submit` -->
+                                    <button aria-label="Generate new password" class="btn text-primary btn-block" form="generatePassword" type="submit">
+                                        <svg>
+                                            <use xlink:href="icons.svg#icons-refresh">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <small class="form-text" id="crackTime">
+                                It would take a computer about
+                                <strong id="time">
+                                </strong>
+                                to
+                        crack your password
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="container-fluid" id="generatePassword">
+                <div class="form-group row">
+                    <label class="col-3 col-form-label" for="randomPasswordLength">
+                        Length:
+                        <strong id="randomPasswordLengthLabel">
+                            12
+                        </strong>
+                    </label>
+                    <div class="col-9">
+                        <input class="form-control custom-range" id="randomPasswordLength" max="56" min="0" step="1" type="range" value="12"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-6 col-sm-3">
+                        <div class="form-check form-check-inline">
+                            <label class="custom-control fill-checkbox">
+                                <input checked="" class="fill-control-input" type="checkbox" value="lowercase"/>
+                                <span class="fill-control-indicator">
+                                </span>
+                                <span class="fill-control-description">Lowercase</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="form-check form-check-inline">
+                            <label class="custom-control fill-checkbox">
+                                <input class="fill-control-input" type="checkbox" value="uppercase"/>
+                                <span class="fill-control-indicator">
+                                </span>
+                                <span class="fill-control-description">Uppercase</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="form-check form-check-inline">
+                            <label class="custom-control fill-checkbox">
+                                <input class="fill-control-input" type="checkbox" value="numbers"/>
+                                <span class="fill-control-indicator">
+                                </span>
+                                <span class="fill-control-description">Numbers</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="form-check form-check-inline">
+                            <label class="custom-control fill-checkbox">
+                                <input class="fill-control-input" type="checkbox" value="symbols"/>
+                                <span class="fill-control-indicator">
+                                </span>
+                                <span class="fill-control-description">Symbols</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <code class="alert" id="alert"></code>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <h6 class="footer__copy">
+                    Made with
+                    <svg class="footer__love"><use xlink:href="icons.svg#icons-favorite"></use></svg>
+                    by
+                    <a href="https://amirasyraf.dev/">Amir Asyraf</a>
+                </h6>
+            </div>
+        </footer>
+        <script src="js/hsimp.min.js" type="text/javascript" defer>
+        </script>
+        <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v2.0.0/dist/clipboard.min.js" defer>
+        </script>
+        <script src="js/main.js" type="text/javascript" defer>
+        </script>
+    </body>
+</html>
