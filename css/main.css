@@ -115,7 +115,7 @@ code.alert:hover {
   box-shadow: 1px 1px 12px 0px rgba(100, 100, 100, 0.9);
 }
 .input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
-  border-radius: 1.5em 0 0 2em;
+  border-radius: 0.3em 0 0 0.3em;
 }
 
 .input-group-append .btn {
@@ -123,7 +123,7 @@ code.alert:hover {
 }
 .input-group>.input-group-append:last-child,
 .input-group>.input-group-append:last-child .btn {
-  border-radius: 0 2em 1.5em 0;
+  border-radius: 0 0.3em 0.3em 0;
 }
 
 .form-control {
