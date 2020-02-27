@@ -1,0 +1,47 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Passgen - Password Generator",
+    "scope": "/passgen/",
+    "display": "standalone",
+    "start_url": "https://apps.amirasyraf.dev/passgen/",
+    "short_name": "Passgen",
+    "theme_color": "#393E46",
+    "description": "Passgen - Password Generator | Amir Asyraf",
+    "orientation": "any",
+    "background_color": "#393E46",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "src/img/favicon-32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "src/img/favicon-64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "src/img/favicon-144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "src/img/favicon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "src/img/favicon-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "src/img/favicon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
